@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌐 My Interactive Web Page</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling Demo -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p>Click the button to increase the counter:</p>
+      <button id="counter-btn">Click me!</button>
+      <p id="counter-display">Count: 0</p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>❓ FAQ Section</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript is a programming language used to make web pages interactive.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What is DOM?</h3>
+        <p class="faq-answer">DOM stands for Document Object Model, a way to access and modify web page elements.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">Why use events?</h3>
+        <p class="faq-answer">Events let you respond to user actions like clicks and typing.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>📋 Registration Form</h2>
+      <form id="register-form" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" required>
+          <small class="error-msg"></small>
+        </label>
+        <label>
+          Email:
+          <input type="email" id="email" required>
+          <small class="error-msg"></small>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" required>
+          <small class="error-msg"></small>
+        </label>
+        <button type="submit">Register</button>
+        <p id="form-success"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

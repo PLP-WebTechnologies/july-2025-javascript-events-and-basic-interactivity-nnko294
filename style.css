@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb; /* Light background */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Section cards */
+section {
+  flex: 1 1 300px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  background: #0ea5e9; /* Sky blue */
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0284c7; /* Darker blue */
+}
+
+/* Dark mode */
+.dark-mode {
+  background: #1e293b; /* Dark navy gray */
+  color: #f8fafc;      /* Soft white */
+}
+
+.dark-mode section {
+  background: #334155; /* Slate card */
+  color: #f1f5f9;
+}
+
+.dark-mode button {
+  background: #06b6d4; /* Cyan blue */
+}
+
+.dark-mode button:hover {
+  background: #0891b2;
+}
+
+/* FAQ styling */
+.faq-item {
+  margin-bottom: 12px;
+}
+.faq-question {
+  cursor: pointer;
+  padding: 10px;
+  background: #e2e8f0;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.faq-answer {
+  display: none;
+  margin: 5px 0 0 0;
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Form styling */
+label {
+  display: block;
+  margin: 12px 0;
+}
+
+input {
+  display: block;
+  padding: 8px;
+  margin-top: 5px;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.error-msg {
+  color: #dc2626; /* Red error */
+  font-size: 0.9em;
+}
+
+#form-success {
+  color: #16a34a; /* Green success */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* FAQ styling */
+.faq-item {
+  margin-bottom: 12px;
+}
+.faq-question {
+  cursor: pointer;
+  padding: 10px;
+  background: #e2e8f0;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.faq-answer {
+  display: none;
+  margin: 5px 0 0 0;
+  padding: 8px;
+  border-left: 3px solid #0ea5e9; /* nice accent */
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Dark mode FAQ */
+.dark-mode .faq-question {
+  background: #475569; /* slate */
+  color: #f8fafc;
+}
+
+.dark-mode .faq-answer {
+  background: #1e293b; /* dark navy */
+  color: #f1f5f9;
+  border-left: 3px solid #06b6d4;
+}
